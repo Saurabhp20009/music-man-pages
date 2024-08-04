@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" as="image" href="/images/cover/small/1.jpg">
+    <link rel="stylesheet" href="css/login.css" crossorigin="" data-precedence="next">
+    <!-- <link rel="preload" as="script" fetchpriority="low" href="js/webpack-ea26b9946418f090.js"
+        crossorigin=""> -->
+     <!-- <script src="js/fd9d1056-71b391be36a79978.js" async="" crossorigin=""></script>
+    <script src="js/8069-96123e0f3da6ebff.js" async="" crossorigin=""></script>
+    <script src="js/main-app-110a24efb98f8f2a.js" async="" crossorigin=""></script>
+    <script src="js/3014691f-0835d57f00668bbf.js" async=""></script>
+    <script src="js/13b76428-cf4449db72fb85bb.js" async=""></script>
+    <script src="js/5250-0fb31d8b0ced3fbf.js" async=""></script>
+    <script src="js/2177-04a9a2e4f565115d.js" async=""></script>
+    <script src="js/4723-d92a6560a25f9638.js" async=""></script>
+    <script src="js/4701-cd3b20d1eaecbd90.js" async=""></script>
+    <script src="js/1858-d5fe526bd4fa7d1f.js" async=""></script>
+    <script src="js/5177-af7bae285cdb2874.js" async=""></script>
+    <script src="js/5272-b60e03ee11a65bf1.js" async=""></script>
+    <script src="js/layout-252e0f63405b28b5.js" async=""></script>
+    <script src="js/2670-bcda9393210c8df7.js" async=""></script>
+    <script src="js/page-7b901f284152ac36.js" async=""></script> -->
+    <title>Music man</title>
+    <meta name="description" content="Listen App - Online Music Streaming App Template">
+    <meta name="keywords"
+        content="music template, music app, music web app, responsive music app, music, themeforest, nextjs music app template, react music app template, css3, react, nextjs">
+    <link rel="icon" sizes="32x32" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/logos/apple-icon/touch-icon-iphone.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/logos/apple-icon/touch-icon-ipad.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/logos/apple-icon/touch-icon-iphone-retina.png"
+        type="image/png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/logos/apple-icon/touch-icon-ipad-retina.png"
+        type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <!-- <script src="js/polyfills-c67a75d1b6f99dc8.js" crossorigin="" nomodule=""></script> -->
+</head>
+
+<body >
+    <!-- <div id="loader">
+        <div class="loader">
+            <div class="loader__eq mx-auto">
+                <span></span><span></span><span></span><span></span><span></span><span></span></div><span
+                class="loader__text mt-2">Loading</span>
+        </div> -->
+    </div>
+    <div class="auth py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-7 col-md-9 col-sm-11 mx-auto">
+                    <div class="card">
+                        <div class="card-body p-sm-5">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <h4 class="mb-0">Login to <span class="text-primary">Listen</span></h4>
+                                <!-- <a
+                                    class="back-home" href="/"><svg viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                        class="remixicon ">
+                                        <path
+                                            d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z">
+                                        </path>
+                                    </svg></a> -->
+                            </div>
+                            <p class="fs-6">Welcome back! login with your data that you entered during registration</p>
+                            <form class="mt-5">
+                                <!-- <div class="mb-5"><button type="button" class="btn btn-white w-100"><span
+                                            class="btn__wrap"><svg viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                fill="currentColor" class="remixicon ">
+                                                <path
+                                                    d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z">
+                                                </path>
+                                            </svg><span class="ms-2">Login with Google</span></span></button></div> -->
+                                <!-- <div class="mb-4">
+                                    <div class="auth__or mx-auto fw-medium"></div>
+                                </div> -->
+                                <div class="mb-3"><label for="username"
+                                        class="form-label fw-medium">Email</label><input id="username" type="email"
+                                        class="form-control" name="username"></div>
+                                <div class="mb-3"><label for="password"
+                                        class="form-label fw-medium">Password</label><input id="password"
+                                        type="password" class="form-control" name="password"></div>
+                                <div class="mb-4 text-end"><a class="link-primary fw-medium" href="/auth/forgot">Forgot
+                                        Password?</a></div>
+                                <div class="mb-5"><button type="submit"
+                                        class="btn btn-primary w-100 btn-loading">Login</button></div>
+                                <!-- <p>Not registered yet? <br><a class="fw-medium" href="/auth/register">Register</a></p> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="player" data-player="blue">
+        <div class="container">
+            <div class="player-container">
+                <div class="cover d-flex align-items-center">
+                    <div class="cover__image">
+                        <div class="ratio ratio-1x1"><img data-amplitude-song-info="cover_art_url" src="images/1.jpg"
+                                alt=""></div>
+                    </div>
+                    <div class="cover__content ps-3 d-none d-sm-block"><span class="cover__title text-truncate"
+                            data-amplitude-song-info="name"></span></div>
+                </div>
+                <div class="player-control"><button type="button"
+                        class="amplitude-repeat btn btn-icon me-4 d-none d-md-inline-flex" aria-label="Repeat"><svg
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="remixicon ">
+                            <path
+                                d="M8 20V21.9325C8 22.2086 7.77614 22.4325 7.5 22.4325C7.38303 22.4325 7.26977 22.3915 7.17991 22.3166L3.06093 18.8841C2.84879 18.7073 2.82013 18.392 2.99691 18.1799C3.09191 18.0659 3.23264 18 3.38103 18L18 18C19.1046 18 20 17.1046 20 16V8H22V16C22 18.2091 20.2091 20 18 20H8ZM16 4V2.0675C16 1.79136 16.2239 1.5675 16.5 1.5675C16.617 1.5675 16.7302 1.60851 16.8201 1.68339L20.9391 5.11587C21.1512 5.29266 21.1799 5.60794 21.0031 5.82008C20.9081 5.93407 20.7674 5.99998 20.619 5.99998L6 6C4.89543 6 4 6.89543 4 8V16H2V8C2 5.79086 3.79086 4 6 4H16Z">
+                            </path>
+                        </svg></button><button type="button" class="amplitude-prev btn btn-icon"
+                        aria-label="Backward"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" class="remixicon ">
+                            <path
+                                d="M7 6C7.55228 6 8 6.44772 8 7V17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17V7C6 6.44772 6.44772 6 7 6ZM9.07869 12.4085C9.03208 12.3756 8.99144 12.3349 8.95854 12.2883C8.7993 12.0627 8.85309 11.7508 9.07869 11.5915L16.2117 6.55648C16.296 6.49693 16.3967 6.46496 16.5 6.46496C16.7761 6.46496 17 6.68882 17 6.96496V17.035C17 17.1383 16.968 17.239 16.9085 17.3234C16.7492 17.549 16.4373 17.6028 16.2117 17.4435L9.07869 12.4085Z">
+                            </path>
+                        </svg></button><button type="button" aria-label="Play"
+                        class="btn btn-icon rounded-pill btn-default amplitude-play-pause"><svg viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="remixicon ">
+                            <path
+                                d="M19.376 12.4161L8.77735 19.4818C8.54759 19.635 8.23715 19.5729 8.08397 19.3432C8.02922 19.261 8 19.1645 8 19.0658V4.93433C8 4.65818 8.22386 4.43433 8.5 4.43433C8.59871 4.43433 8.69522 4.46355 8.77735 4.5183L19.376 11.584C19.6057 11.7372 19.6678 12.0477 19.5146 12.2774C19.478 12.3323 19.4309 12.3795 19.376 12.4161Z">
+                            </path>
+                        </svg></button><button type="button" class="amplitude-next btn btn-icon"
+                        aria-label="Forward"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" class="remixicon ">
+                            <path
+                                d="M7.78834 17.4435C7.70398 17.5031 7.60326 17.535 7.5 17.535C7.22386 17.535 7 17.3112 7 17.035V6.96496C7 6.8617 7.03197 6.76098 7.09152 6.67662C7.25076 6.45102 7.56274 6.39723 7.78834 6.55648L14.9213 11.5915C14.9679 11.6244 15.0086 11.665 15.0415 11.7117C15.2007 11.9373 15.1469 12.2492 14.9213 12.4085L7.78834 17.4435ZM16 7C16 6.44772 16.4477 6 17 6C17.5523 6 18 6.44772 18 7V17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17V7Z">
+                            </path>
+                        </svg></button><button type="button"
+                        class="amplitude-shuffle amplitude-shuffle-off btn btn-icon ms-4 d-none d-md-inline-flex"
+                        aria-label="Shuffle"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" fill="currentColor" class="remixicon ">
+                            <path
+                                d="M18 17.8832V16L23 19L18 22V19.9095C14.9224 19.4698 12.2513 17.4584 11.0029 14.5453L11 14.5386L10.9971 14.5453C9.57893 17.8544 6.32508 20 2.72483 20H2V18H2.72483C5.52503 18 8.05579 16.3312 9.15885 13.7574L9.91203 12L9.15885 10.2426C8.05579 7.66878 5.52503 6 2.72483 6H2V4H2.72483C6.32508 4 9.57893 6.14557 10.9971 9.45473L11 9.46141L11.0029 9.45473C12.2513 6.5416 14.9224 4.53022 18 4.09051V2L23 5L18 8V6.11684C15.7266 6.53763 13.7737 8.0667 12.8412 10.2426L12.088 12L12.8412 13.7574C13.7737 15.9333 15.7266 17.4624 18 17.8832Z">
+                            </path>
+                        </svg></button></div>
+                <div class="player-info">
+                    <div class="player-duration me-4 d-none d-xl-block"><span>Live</span></div>
+                    <div class="player-volume dropdown d-none d-md-inline-flex"><button class="btn btn-icon"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-label="Volume"
+                            aria-expanded="false"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20"
+                                height="20" fill="currentColor" class="remixicon ">
+                                <path
+                                    d="M8.88889 16H5C4.44772 16 4 15.5523 4 15V9.00001C4 8.44772 4.44772 8.00001 5 8.00001H8.88889L14.1834 3.66815C14.3971 3.49329 14.7121 3.52479 14.887 3.73851C14.9601 3.82784 15 3.93971 15 4.05513V19.9449C15 20.221 14.7761 20.4449 14.5 20.4449C14.3846 20.4449 14.2727 20.405 14.1834 20.3319L8.88889 16ZM18.8631 16.5911L17.4411 15.169C18.3892 14.4376 19 13.2901 19 12C19 10.5697 18.2493 9.31469 17.1203 8.6076L18.5589 7.169C20.0396 8.2616 21 10.0187 21 12C21 13.8422 20.1698 15.4904 18.8631 16.5911Z">
+                                </path>
+                            </svg></button>
+                        <div class="dropdown-menu"><input type="range" class="amplitude-volume-slider" min="0" max="100"
+                                aria-label="Volume slider" value="50"></div>
+                    </div>
+                    <div class="dropstart d-none d-md-block player-options"><a role="button"
+                            class="btn btn-icon dropdown-link" data-bs-toggle="dropdown" aria-label="Options"
+                            aria-expanded="false"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" class="remixicon ">
+                                <path
+                                    d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3ZM12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z">
+                                </path>
+                            </svg></a>
+                        <div class="dropdown-menu dropdown-menu-sm"><a class="dropdown-item"
+                                role="button">Favorite</a><a class="dropdown-item" role="button">Add to playlist</a><a
+                                class="dropdown-item" role="button">Download</a><a class="dropdown-item"
+                                role="button">Share</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+    <!-- <script src="js/webpack-ea26b9946418f090.js" crossorigin="" async=""></script> -->
+    <!-- <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/css/6a28996542211d51.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L2\"\n"])</script>
+    <script>self.__next_f.push([1, "3:I[7690,[],\"\"]\n6:I[5613,[],\"\"]\n7:I[1778,[],\"\"]\n9:I[9382,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/app/layout-252e0f63405b28b5.js\"],\"\"]\na:I[4119,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/app/layout-252e0f63405b28b5.js\"],\"\"]\nb:I[963,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/app/layout-252e0f63405b28b5.js\"],\"\"]\nc:I[1404,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/ap"])</script>
+    <script>self.__next_f.push([1, "p/layout-252e0f63405b28b5.js\"],\"\"]\nd:I[6039,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/app/layout-252e0f63405b28b5.js\"],\"\"]\ne:I[5272,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/app/layout-252e0f63405b28b5.js\"],\"\"]\n10:I[9835,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"2177\",\"static/chunks/2177-04a9a2e4f565115d.js\",\"4723\",\"static/chunks/4723-d92a6560a25f9638.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"1858\",\"static/chunks/1858-d5fe526bd4fa7d1f.js\",\"5177\",\"static/chunks/5177-af7bae285cdb2874.js\",\"5272\",\"static/chunks/5272-b60e03ee11a65bf1.js\",\"3185\",\"static/chunks/app/layout-252e0f63405b28b5.js\"],\"\"]\n12:I[8955,[],\"\"]\n13:[]\n"])</script>
+    <script>self.__next_f.push([1, "2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/6a28996542211d51.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"bRBIwiEh0vlOrXCyWkknH\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/auth/login\",\"initialTree\":[\"\",{\"children\":[\"auth\",{\"children\":[\"login\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"auth\",{\"children\":[\"login\",{\"children\":[\"__PAGE__\",{},[\"$L4\",\"$L5\",null]]},[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"auth\",\"children\",\"login\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"styles\":null}]]},[null,\"$L8\",null]]},[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"icon\",\"sizes\":\"32x32\",\"href\":\"/images/logos/favicon.ico\",\"type\":\"image/x-icon\"}],[\"$\",\"link\",null,{\"rel\":\"apple-touch-icon\",\"sizes\":\"72x72\",\"href\":\"/images/logos/apple-icon/touch-icon-iphone.png\",\"type\":\"image/png\"}],[\"$\",\"link\",null,{\"rel\":\"apple-touch-icon\",\"sizes\":\"152x152\",\"href\":\"/images/logos/apple-icon/touch-icon-ipad.png\",\"type\":\"image/png\"}],[\"$\",\"link\",null,{\"rel\":\"apple-touch-icon\",\"sizes\":\"180x180\",\"href\":\"/images/logos/apple-icon/touch-icon-iphone-retina.png\",\"type\":\"image/png\"}],[\"$\",\"link\",null,{\"rel\":\"apple-touch-icon\",\"sizes\":\"167x167\",\"href\":\"/images/logos/apple-icon/touch-icon-ipad-retina.png\",\"type\":\"image/png\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800\u0026display=swap\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900\u0026display=swap\",\"rel\":\"stylesheet\"}]]}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L9\",null,{}],[\"$\",\"$La\",null,{\"children\":[\"$\",\"$Lb\",null,{\"children\":[[\"$\",\"$Lc\",null,{}],[\"$\",\"$Ld\",null,{\"children\":[\"$\",\"$Le\",null,{\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$Lf\",\"notFoundStyles\":[],\"styles\":null}]}]}],[\"$\",\"$L10\",null,{}]]}]}]]}]]}],null]],\"initialHead\":[false,\"$L11\"],\"globalErrorComponent\":\"$12\",\"missingSlots\":\"$W13\"}]]\n"])</script>
+    <script>self.__next_f.push([1, "14:I[5250,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"2670\",\"static/chunks/2670-bcda9393210c8df7.js\",\"6716\",\"static/chunks/app/auth/login/page-7b901f284152ac36.js\"],\"\"]\n15:I[7375,[\"3665\",\"static/chunks/3014691f-0835d57f00668bbf.js\",\"6990\",\"static/chunks/13b76428-cf4449db72fb85bb.js\",\"5250\",\"static/chunks/5250-0fb31d8b0ced3fbf.js\",\"4701\",\"static/chunks/4701-cd3b20d1eaecbd90.js\",\"2670\",\"static/chunks/2670-bcda9393210c8df7.js\",\"6716\",\"static/chunks/app/auth/login/page-7b901f284152ac36.js\"],\"\"]\n5:[[\"$\",\"div\",null,{\"className\":\"d-flex align-items-center justify-content-between mb-2\",\"children\":[[\"$\",\"h4\",null,{\"className\":\"mb-0\",\"children\":[\"Login to \",[\"$\",\"span\",null,{\"className\":\"text-primary\",\"children\":\"Listen\"}]]}],[\"$\",\"$L14\",null,{\"href\":\"/\",\"className\":\"back-home\",\"children\":[\"$\",\"svg\",null,{\"viewBox\":\"0 0 24 24\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"fill\":\"currentColor\",\"className\":\"remixicon \",\"children\":[\"$\",\"path\",null,{\"d\":\"M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z\"}]}]}]]}],[\"$\",\"p\",null,{\"className\":\"fs-6\",\"children\":\"Welcome back! login with your data that you entered during registration\"}],[\"$\",\"$L15\",null,{}]]\n8:[\"$\",\"div\",null,{\"className\":\"auth py-5\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"children\":[\"$\",\"div\",null,{\"className\":\"col-xl-5 col-lg-7 col-md-9 col-sm-11 mx-auto\",\"children\":[\"$\",\"div\",null,{\"className\":\"card\",\"children\":[\"$\",\"div\",null,{\"className\":\"card-body p-sm-5\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"auth\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"erro"])</script>
+    <script>self.__next_f.push([1, "rStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"styles\":null}]}]}]}]}]}]}]\nf:\"$L16\"\n11:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Listen App - Online Music Streaming App\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Listen App - Online Music Streaming App Template\"}],[\"$\",\"meta\",\"4\",{\"name\":\"keywords\",\"content\":\"music template, music app, music web app, responsive music app, music, themeforest, nextjs music app template, react music app template, css3, react, nextjs\"}]]\n4:null\n16:E{\"digest\":\"NEXT_REDIRECT;replace;/404;307;\"}\n"])</script>
+    <script>self.__next_f.push([1, ""])</script>
+     -->
+</body>
+
+</html>
